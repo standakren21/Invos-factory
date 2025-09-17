@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Invos Factory</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Invos Factory</h1>
+      <div class="coins" id="coins">0 Kč</div>
+    </header>
+
+    <main>
+      <div class="machine">
+        <div class="belt"></div>
+        <div class="reel"></div>
+      </div>
+
+      <div class="workers">
+        <button class="worker" data-id="1">
+          <div class="head">1</div>
+          <div class="shirt">Invos</div>
+          <div class="legs"></div>
+        </button>
+        <button class="worker" data-id="2">
+          <div class="head">2</div>
+          <div class="shirt">Invos</div>
+          <div class="legs"></div>
+        </button>
+        <button class="worker" data-id="3">
+          <div class="head">3</div>
+          <div class="shirt">Invos</div>
+          <div class="legs"></div>
+        </button>
+        <button class="worker" data-id="4">
+          <div class="head">4</div>
+          <div class="shirt">Invos</div>
+          <div class="legs"></div>
+        </button>
+      </div>
+
+      <div class="controls">
+        <button id="reset">Reset</button>
+        <button id="install" hidden>Přidat na plochu</button>
+        <button id="soundToggle">🔊 Zvuk</button>
+      </div>
+    </main>
+
+    <footer>
+      <small>Made for you • offline-ready</small>
+    </footer>
+  </div>
+
+  <audio id="clickSound" preload="auto" src="coin.wav"></audio>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:#0e0f12;color:#fff}
+#app{max-width:720px;margin:0 auto;padding:env(safe-area-inset-top) 16px 24px}
+header{display:flex;align-items:center;justify-content:space-between;margin:8px 0 16px}
+h1{margin:0;font-size:22px;letter-spacing:.5px}
+.coins{font-weight:700;padding:6px 10px;background:#1a1d24;border-radius:8px;box-shadow:inset 0 0 0 1px #2a2f3a}
+.machine{position:relative;height:170px;background:#12141a;border-radius:12px;padding:16px;box-shadow:inset 0 0 0 1px #252a34}
+.belt{position:absolute;left:16px;right:86px;top:50%;height:26px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 20px,rgba(255,255,255,.08) 20px 40px);transform:translateY(-50%);animation:belt 3s linear infinite;border-radius:6px}
+@keyframes belt{from{background-position:0 0}to{background-position:-200px 0}}
+.reel{position:absolute;right:16px;top:50%;width:56px;height:56px;border-radius:50%;border:6px solid rgba(255,255,255,.12);transform:translateY(-50%);box-shadow:inset 0 0 0 2px rgba(255,255,255,.06)}
+.workers{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 2px}
+.worker{appearance:none;border:none;background:#1a1d24;border-radius:12px;padding:10px 8px;box-shadow:inset 0 0 0 1px #2a2f3a;transition:transform .05s;cursor:pointer}
+.worker:active{transform:scale(.98)}
+.head{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;margin:0 auto 6px;background:linear-gradient(135deg,#5568fe,#7aa7ff);font-weight:700}
+.shirt{width:80px;height:72px;margin:0 auto 6px;border-radius:8px;display:grid;place-items:center;background:#2d6cdf;font-weight:800;letter-spacing:.5px}
+.legs{width:46px;height:16px;margin:0 auto;border-radius:4px;background:#3a3f4a}
+.controls{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+.controls button{padding:10px 12px;border-radius:10px;border:1px solid #2a2f3a;background:#171a20;color:#fff}
+footer{margin-top:18px;text-align:center;color:#aab}
